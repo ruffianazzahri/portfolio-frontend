@@ -160,7 +160,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4">
+          <!-- <div class="col-12 col-md-4 mb-4">
             <div class="card h-100">
               <img src="/img/kebiasaan.png" class="card-img-top" alt="2" />
               <div class="card-body">
@@ -176,7 +176,7 @@
                 <p class="card-text fst-italic">December 2021</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
