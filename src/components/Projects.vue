@@ -47,10 +47,10 @@
                   A Web-Based Information System for a Government Office in Batam, developed for
                   requesting travel orders, submitting payments, submitting dispositions, and more.
                 </p>
+                <p class="card-text fw-bold">Project Type: External Project</p>
                 <p class="card-text fw-bold">
                   Category: Government Web Development, Laravel, PHP, MySQL
                 </p>
-                <p class="card-text fw-bold">Project Type: External Project</p>
                 <p class="card-text fst-italic">September 2024 - Present (Ongoing)</p>
               </div>
             </div>
