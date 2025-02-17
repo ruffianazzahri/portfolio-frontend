@@ -96,7 +96,7 @@
                 <p class="card-text fw-bold">
                   Category: Virtual Reality, Unity Studio, C# (For Unity)
                 </p>
-                <p class="card-text fst-italic">June 2023</p>
+                <p class="card-text fst-italic">February 2023 - June 2023</p>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@
                 <p class="card-text fw-bold">
                   Category: Mobile Apps Development, Flutter, Dart, MySQL
                 </p>
-                <p class="card-text fst-italic">December 2022</p>
+                <p class="card-text fst-italic">August 2022 - December 2022</p>
               </div>
             </div>
           </div>
@@ -155,21 +155,7 @@
                   Competition at KMIPN IV.
                 </p>
                 <p class="card-text fw-bold">Category: Game, Unity</p>
-                <p class="card-text fst-italic">July 2022</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="/img/webportfolio.png" class="card-img-top" />
-              <div class="card-body">
-                <a href="index.html"
-                  ><h5 class="card-title">Muhammad Ruffian Azzahri, Portfolio</h5></a
-                >
-                <p class="card-text">A self-portfolio in a responsive web format.</p>
-                <p class="card-text fw-bold">Category: Web Development</p>
-                <p class="card-text fst-italic">April 2022</p>
+                <p class="card-text fst-italic">February 2022 - July 2022</p>
               </div>
             </div>
           </div>

@@ -17,11 +17,17 @@ import {
   faBriefcase,
   faStar,
   faArrowUp,
+  faBars,
+  faLaptopCode,
+  faCode,
+  faDatabase,
+  faTools,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faHouse,
@@ -37,7 +43,13 @@ library.add(
   faBriefcase,
   faGithub,
   faStar,
-  faArrowUp
+  faArrowUp,
+  faBars,
+  faLaptopCode,
+  faLayerGroup,
+  faCode,
+  faDatabase,
+  faTools
 );
 
 const app = createApp(App);
