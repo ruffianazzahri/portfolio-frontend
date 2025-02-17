@@ -46,7 +46,7 @@ export default defineConfig({
     outDir: "dist", // direktori output yang diinginkan
     assetsDir: "assets", // tempat menyimpan aset seperti CSS dan gambar
   },
-  base: "/portfolio-frontend/",
+  base: "/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

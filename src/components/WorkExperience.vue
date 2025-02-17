@@ -208,7 +208,7 @@
           ></button>
         </div>
         <div class="modal-body text-center">
-          <iframe src="/portfolio-frontend/pdf/cv.pdf" width="100%" height="100%"></iframe>
+          <iframe src="/pdf/cv.pdf" width="100%" height="100%"></iframe>
         </div>
       </div>
     </div>
