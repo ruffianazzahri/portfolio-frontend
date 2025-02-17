@@ -50,6 +50,7 @@
                 <p class="card-text fw-bold">
                   Category: Government Web Development, Laravel, PHP, MySQL
                 </p>
+                <p class="card-text fw-bold">Project Type: External Project</p>
                 <p class="card-text fst-italic">September 2024 - Present (Ongoing)</p>
               </div>
             </div>
