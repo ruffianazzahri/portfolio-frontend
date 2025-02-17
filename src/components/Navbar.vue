@@ -59,7 +59,7 @@
               href="#achievements"
               :class="{ active: activeSection === 'achievements' }"
             >
-              <font-awesome-icon :icon="['fas', 'medal']" /> Achievements
+              <font-awesome-icon :icon="['fas', 'trophy']" /> Achievements
             </a>
           </li>
           <li class="nav-item">
