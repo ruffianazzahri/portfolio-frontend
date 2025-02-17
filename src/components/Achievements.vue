@@ -17,7 +17,7 @@
                 <a
                   href="https://drive.google.com/file/d/1QI59wXhJzTKhIfkgl2j8lD2Rc7RbMaan/view?usp=sharing"
                   target="_blank"
-                  >Participant of Web Development Competition</a
+                  >2022 Participant of Web Development Competition</a
                 >
               </h5>
               <p class="card-text fst-italic">Sevent, HMSE, Institut Teknologi Telkom Purwokerto</p>
@@ -32,7 +32,7 @@
                 <a
                   href="https://drive.google.com/file/d/1r2XwveSycqDv5NKdcxhRl16pRfP4t-Fu/view?usp=sharing"
                   target="_blank"
-                  >Finalist of Game Development Competition</a
+                  >2022 Finalist of National Game Development Competition</a
                 >
               </h5>
               <p class="card-text fst-italic">KMIPN IV, Politeknik Negeri Batam</p>
