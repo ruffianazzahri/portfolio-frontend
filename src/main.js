@@ -16,6 +16,7 @@ import {
   faFileAlt,
   faBriefcase,
   faStar,
+  faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -35,7 +36,8 @@ library.add(
   faFileAlt,
   faBriefcase,
   faGithub,
-  faStar
+  faStar,
+  faArrowUp
 );
 
 const app = createApp(App);
@@ -43,4 +45,5 @@ const app = createApp(App);
 // Daftarkan FontAwesome sebagai komponen global
 app.component("font-awesome-icon", FontAwesomeIcon);
 
-createApp(App).mount("#app");
+// Mount aplikasi hanya satu kali
+app.mount("#app");
