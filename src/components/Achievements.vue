@@ -21,7 +21,7 @@
                 >
               </h5>
               <p class="card-text fst-italic">Sevent, HMSE, Institut Teknologi Telkom Purwokerto</p>
-              <p class="card-text fst-italic text-secondary">August 03, 2022</p>
+              <p class="card-text fst-italic text-secondary">October 25, 2022</p>
             </div>
           </div>
         </div>

@@ -38,17 +38,20 @@
         <div class="row">
           <div class="col-12 col-md-4 mb-4">
             <div class="card h-100">
-              <img src="/img/schneider.png" class="card-img-top" />
+              <img src="/img/blp-smartwarehouse.jpeg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">
                   Digital Transformation - Web Redesign and Development Projects
                   <span class="fw-bold">(CONFIDENTIAL)</span>
                 </h5>
                 <p class="card-text">
-                  My mentors and I from PT. Schneider Electric Manufacturing Batam in the Digital
-                  Transformation department have developed and redesigned company websites using
-                  ASP.NET MVC Framework and Microsoft SQL Server to increase company profile
-                  engagement and transform some departments' work efficiency.
+                  My mentors and I at PT. Schneider Electric Manufacturing Batam from the Digital
+                  Transformation department have developed several company websites using the
+                  ASP.NET MVC Framework and Microsoft SQL Server to improve the company profile and
+                  enhance work efficiency in various departments. The screenshot above shows the
+                  website developed for the BLP Plant, which aims to provide information about smart
+                  warehouse, the BLP plant, organizational structure, etc. However, the data
+                  presented is more interactive as it is integrated with a database.
                 </p>
                 <p class="card-text fw-bold">
                   Category: Web Development, C#, ASP .NET MVC, SQL Server
