@@ -38,6 +38,24 @@
         <div class="row">
           <div class="col-12 col-md-4 mb-4">
             <div class="card h-100">
+              <img src="/img/govermentwebsoon.jpeg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Government Website <span class="fw-bold">(CONFIDENTIAL)</span>
+                </h5>
+                <p class="card-text">
+                  A Web-Based Information System for a Government Office in Batam, developed for
+                  requesting travel orders, submitting payments, submitting dispositions, and more.
+                </p>
+                <p class="card-text fw-bold">
+                  Category: Government Web Development, Laravel, PHP, MySQL
+                </p>
+                <p class="card-text fst-italic">September 2024 - Present (Ongoing)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
               <img src="/img/blp-smartwarehouse.jpeg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">
@@ -54,7 +72,7 @@
                   presented is more interactive as it is integrated with a database.
                 </p>
                 <p class="card-text fw-bold">
-                  Category: Web Development, C#, ASP .NET MVC, SQL Server
+                  Category: Corporate Web Development, ASP .NET MVC, C#, SQL Server
                 </p>
                 <p class="card-text fst-italic">August 2023 - August 2024</p>
               </div>
@@ -74,7 +92,7 @@
                   Framework (v8), C# language, and SQL Server for database management.
                 </p>
                 <p class="card-text fw-bold">
-                  Category: Web Development, C#, ASP .NET MVC, SQL Server
+                  Category: Web Development, ASP .NET MVC, C#, SQL Server
                 </p>
                 <p class="card-text fst-italic">July 2024</p>
               </div>
@@ -94,7 +112,8 @@
                   Learning and collaborated with Nongsa Digital Park.
                 </p>
                 <p class="card-text fw-bold">
-                  Category: Virtual Reality, Unity Studio, C# (For Unity)
+                  Category: Corporate Apps Development, Virtual Reality, Unity Studio, C# (For
+                  Unity)
                 </p>
                 <p class="card-text fst-italic">February 2023 - June 2023</p>
               </div>
@@ -111,12 +130,12 @@
                   ><h5 class="card-title">SI-LAH</h5></a
                 >
                 <p class="card-text">
-                  An Android mobile app developed by SFR Developer, allowing users to report
-                  facility issues online directly to the Education Office. This project was part of
-                  the 5th Semester Project-Based Learning.
+                  An Android application developed by SFR Developers allows users to report facility
+                  issues online directly to the Department of Education Office in Tanjungpinang
+                  City. This project is part of the 5th Semester of Project-Based Learning.
                 </p>
                 <p class="card-text fw-bold">
-                  Category: Mobile Apps Development, Flutter, Dart, MySQL
+                  Category: Corporate Apps Development, Flutter, Dart, MySQL
                 </p>
                 <p class="card-text fst-italic">August 2022 - December 2022</p>
               </div>
@@ -154,7 +173,9 @@
                   Semester Project-Based Learning and was a finalist in the Game Development
                   Competition at KMIPN IV.
                 </p>
-                <p class="card-text fw-bold">Category: Game, Unity</p>
+                <p class="card-text fw-bold">
+                  Category: Game Development, Virtual Reality, Unity Studio, C# (For Unity)
+                </p>
                 <p class="card-text fst-italic">February 2022 - July 2022</p>
               </div>
             </div>
