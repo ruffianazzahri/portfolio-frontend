@@ -367,7 +367,7 @@ export default {
   methods: {
     openModal(project) {
       this.selectedProject = project;
-      this.selectedImageIndex = 0; // Mulai dengan gambar pertama
+      this.selectedImageIndex = 0;
       this.isModalOpen = true;
     },
     closeModal() {
@@ -393,7 +393,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1050; /* Pastikan modal berada di atas navbar */
+  z-index: 1050;
 }
 
 .modal-content {
@@ -401,7 +401,7 @@ export default {
   background: white;
   padding: 20px;
   text-align: center;
-  z-index: 1060; /* Pastikan konten modal berada di atas overlay */
+  z-index: 1060;
 }
 
 .modal-image {
@@ -409,7 +409,7 @@ export default {
   max-height: 80vh;
   width: auto;
   height: auto;
-  object-fit: contain; /* Mempertahankan rasio aspek gambar */
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
