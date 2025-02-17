@@ -71,6 +71,7 @@
                   warehouse, the BLP plant, organizational structure, etc. However, the data
                   presented is more interactive as it is integrated with a database.
                 </p>
+                <p class="card-text fw-bold">Project Type: External Project</p>
                 <p class="card-text fw-bold">
                   Category: Corporate Web Development, ASP .NET MVC, C#, SQL Server
                 </p>
@@ -91,6 +92,7 @@
                   Server queries through the web. This application is built using the ASP.NET MVC
                   Framework (v8), C# language, and SQL Server for database management.
                 </p>
+                <p class="card-text fw-bold">Project Type: External Project</p>
                 <p class="card-text fw-bold">
                   Category: Web Development, ASP .NET MVC, C#, SQL Server
                 </p>
@@ -111,6 +113,7 @@
                   developed by Tworue Studio. This project was part of the 6th Project-Based
                   Learning and collaborated with Nongsa Digital Park.
                 </p>
+                <p class="card-text fw-bold">Project Type: PBL Project, External Project</p>
                 <p class="card-text fw-bold">
                   Category: Corporate Apps Development, Virtual Reality, Unity Studio, C# (For
                   Unity)
@@ -134,6 +137,7 @@
                   issues online directly to the Department of Education Office in Tanjungpinang
                   City. This project is part of the 5th Semester of Project-Based Learning.
                 </p>
+                <p class="card-text fw-bold">Project Type: PBL Project, External Project</p>
                 <p class="card-text fw-bold">
                   Category: Corporate Apps Development, Flutter, Dart, MySQL
                 </p>
@@ -153,6 +157,7 @@
                   A company profile web project by XII Studio, participating in the Sevent: Web
                   Development Competition by Institut Teknologi Purwokerto.
                 </p>
+                <p class="card-text fw-bold">Project Type: Competition Project</p>
                 <p class="card-text fw-bold">Category: Web Development, Bootstrap</p>
                 <p class="card-text fst-italic">October 2022</p>
               </div>
@@ -173,6 +178,7 @@
                   Semester Project-Based Learning and was a finalist in the Game Development
                   Competition at KMIPN IV.
                 </p>
+                <p class="card-text fw-bold">Project Type: PBL Project, Competition Project</p>
                 <p class="card-text fw-bold">
                   Category: Game Development, Virtual Reality, Unity Studio, C# (For Unity)
                 </p>
