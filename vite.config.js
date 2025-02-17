@@ -42,6 +42,10 @@ const target = env.ASPNETCORE_HTTPS_PORT
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [plugin()],
+  build: {
+    outDir: "dist", // direktori output yang diinginkan
+    assetsDir: "assets", // tempat menyimpan aset seperti CSS dan gambar
+  },
   base: "/portfolio-frontend/",
   resolve: {
     alias: {

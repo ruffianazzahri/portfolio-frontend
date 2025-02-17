@@ -43,4 +43,4 @@ const app = createApp(App);
 // Daftarkan FontAwesome sebagai komponen global
 app.component("font-awesome-icon", FontAwesomeIcon);
 
-app.mount("#app");
+createApp(App).mount("#app");
