@@ -29,6 +29,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
               <h5 class="card-title"><i class="fas fa-layer-group"></i> Frameworks</h5>
               <p class="card-text">
                 ASP .NET MVC, ASP .NET Core, ASP. NET Core Blazor, Vue.JS, Laravel, Flutter,
+                Bootstrap
               </p>
             </div>
           </div>
