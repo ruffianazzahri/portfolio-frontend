@@ -14,7 +14,7 @@
           height="40"
           class="me-2 rounded-circle"
         />
-        <span class="fw-bold">Portfolio</span>
+        <span class="fw-bold" style="color: #fff">Portfolio</span>
       </a>
       <button
         class="navbar-toggler border-0"
