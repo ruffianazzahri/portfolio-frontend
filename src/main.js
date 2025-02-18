@@ -23,6 +23,8 @@ import {
   faDatabase,
   faTools,
   faDownload,
+  faExternalLinkAlt,
+  faEye,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -51,7 +53,9 @@ library.add(
   faCode,
   faDatabase,
   faTools,
-  faDownload
+  faDownload,
+  faExternalLinkAlt,
+  faEye
 );
 
 const app = createApp(App);

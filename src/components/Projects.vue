@@ -164,20 +164,27 @@ export default {
         <div class="row">
           <div class="col-12 col-md-4 mb-4" v-for="project in projects" :key="project.title">
             <div class="card h-100">
-              <img
-                :src="project.image"
-                class="card-img-top"
-                :alt="project.title"
-                @click="openModal(project)"
-              />
+              <div class="card-img-container">
+                <img :src="project.image" class="card-img-top" :alt="project.title" />
+                <div class="hover-overlay">
+                  <a
+                    v-if="project.link"
+                    :href="project.link"
+                    target="_blank"
+                    class="hover-btn go-to-link"
+                  >
+                    <font-awesome-icon :icon="['fas', 'external-link-alt']" /> Go to Link
+                  </a>
+                  <button class="hover-btn preview-btn" @click="openModal(project)">
+                    <font-awesome-icon :icon="['fas', 'eye']" /> Preview
+                  </button>
+                </div>
+              </div>
               <div class="card-body">
-                <a v-if="project.link" :href="project.link" target="_blank">
-                  <h5 class="card-title">
-                    {{ project.title }}
-                    <span class="fw-bold" v-if="project.isConfidential">(CONFIDENTIAL)</span>
-                  </h5>
-                </a>
-                <h5 v-else class="card-title">{{ project.title }}</h5>
+                <h5 class="card-title">
+                  {{ project.title }}
+                  <span class="fw-bold" v-if="project.isConfidential">(CONFIDENTIAL)</span>
+                </h5>
                 <p class="card-text">{{ project.description }}</p>
                 <p class="card-text fw-bold">Project Type: {{ project.type }}</p>
                 <p class="card-text fw-bold">Category: {{ project.category }}</p>
@@ -210,6 +217,7 @@ export default {
     </div>
   </section>
 </template>
+
 <script>
 export default {
   name: "Projects",
@@ -237,8 +245,12 @@ export default {
               caption: "Smart Warehouse and BLP Plant Introduction Page",
             },
             {
+              url: "/img/blp-smartwarehouse3.jpeg",
+              caption: "Admin Login Page",
+            },
+            {
               url: "/img/blp-smartwarehouse2.jpeg",
-              caption: "Admin Dashboard for Manage BLP and Smart Warehouse data",
+              caption: "Admin Dashboard for Manage BLP Plant Information and Smart Warehouse data",
             },
             { url: "/img/wireframe1.jpeg", caption: "Wireframe 1" },
             { url: "/img/wireframe2.jpeg", caption: "Wireframe 2" },
@@ -382,6 +394,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .modal-overlay {
   position: fixed;
@@ -449,7 +462,56 @@ export default {
   font-size: 30px;
 }
 
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .card-img-top {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-img-container:hover .hover-overlay {
+  opacity: 1;
+}
+
+.hover-btn {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin: 0 10px;
   cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hover-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.go-to-link {
+  background: rgba(0, 123, 255, 0.7);
+}
+
+.preview-btn {
+  background: rgba(40, 167, 69, 0.7);
 }
 </style>

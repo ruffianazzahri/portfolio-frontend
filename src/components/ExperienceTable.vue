@@ -1,62 +1,49 @@
 <template>
-  <div class="text-center p-2">
-    <div class="container">
-      <div class="table-responsive">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col" class="text-center">No.</th>
-              <th scope="col" class="text-center">Year</th>
-              <th scope="col" class="text-center">Company</th>
-              <th scope="col" class="text-center">Position</th>
-              <th scope="col" class="text-center">Responsibilities</th>
-              <th scope="col" class="text-center">Contributions</th>
-              <th scope="col" class="text-center">Other</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="experience in experiences" :key="experience.id">
-              <th scope="row" class="text-center">{{ experience.id }}</th>
-              <td class="text-center">{{ experience.year }}</td>
-              <td class="text-center">
-                <img
-                  :src="experience.company.logo"
-                  class="rounded mb-2"
-                  :alt="experience.company.name"
-                  width="100"
-                  height="100"
-                />
-                <br />{{ experience.company.name }}
-              </td>
-              <td class="text-center">{{ experience.position }}</td>
-              <td>
-                <ol>
-                  <li v-for="(responsibility, index) in experience.responsibilities" :key="index">
-                    {{ responsibility }}
-                  </li>
-                </ol>
-              </td>
-              <td>
-                <ol>
-                  <li v-for="(contribution, index) in experience.contributions" :key="index">
-                    {{ contribution }}
-                  </li>
-                </ol>
-              </td>
-              <td class="text-center">
-                <button
-                  type="button"
-                  class="btn btn-dark"
-                  data-bs-toggle="modal"
-                  :data-bs-target="'#' + experience.modal.id"
-                >
-                  {{ experience.modal.title }}
-                </button>
-                <ExperienceModal :modal="experience.modal" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+  <div class="container py-4">
+    <div class="experience-list">
+      <div
+        v-for="experience in experiences"
+        :key="experience.id"
+        class="experience-card-wrapper mb-4"
+      >
+        <div class="card experience-card">
+          <div class="row g-0">
+            <div class="col-md-8 p-4">
+              <h5 class="card-title">{{ experience.position }}</h5>
+              <p class="card-text"><strong>Duration:</strong> {{ experience.year }}</p>
+              <p class="card-text"><strong>Company:</strong> {{ experience.company.name }}</p>
+              <p class="card-text"><strong>Responsibilities:</strong></p>
+              <ul>
+                <li v-for="(responsibility, index) in experience.responsibilities" :key="index">
+                  {{ responsibility }}
+                </li>
+              </ul>
+              <p class="card-text"><strong>Contributions:</strong></p>
+              <ul>
+                <li v-for="(contribution, index) in experience.contributions" :key="index">
+                  {{ contribution }}
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-dark mt-2"
+                data-bs-toggle="modal"
+                :data-bs-target="'#' + experience.modal.id"
+              >
+                {{ experience.modal.title }}
+              </button>
+              <ExperienceModal :modal="experience.modal" />
+            </div>
+
+            <div class="col-md-4 d-flex align-items-center justify-content-center p-2">
+              <img
+                :src="experience.company.logo"
+                class="fixed-size-img rounded"
+                :alt="experience.company.name"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -66,7 +53,7 @@
 import ExperienceModal from "./ExperienceModal.vue";
 
 export default {
-  name: "ExperienceTable",
+  name: "ExperienceCards",
   components: {
     ExperienceModal,
   },
@@ -78,3 +65,21 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-card-wrapper {
+  width: 100%;
+}
+
+.fixed-size-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+</style>
