@@ -26,9 +26,9 @@
               <p>
                 I am a graduate of Politeknik Negeri Batam in 2024, majoring in Informatics
                 Engineering, with a study program in Multimedia Engineering Technology. I achieved a
-                GPA of 3.71 with <strong>cum laude</strong> honors. During studies, i did 4 projects
-                of Project Based Learning (PBL) that consist of Multimedia and Programming project
-                topics.
+                GPA of 3.71 with
+                <strong>cum laude</strong> honors. During studies, I did 4 projects of Project Based
+                Learning (PBL) that consist of Multimedia and Programming project topics.
               </p>
               <p>
                 I have more than 1 year of experience in Web Development using multiple frameworks,
@@ -48,31 +48,13 @@
                 <div class="col-md-6">
                   <h4>Feel free to contact me!</h4>
                   <div class="row justify-content-center">
-                    <div class="col-4 col-sm-4 px-1 mb-2">
-                      <a
-                        href="https://linkedin.com/in/ruffianazzahri"
-                        target="_blank"
-                        class="btn btn-dark btn-lg w-100"
-                      >
-                        <font-awesome-icon :icon="['fab', 'linkedin']" size="2x" />
-                      </a>
-                    </div>
-                    <div class="col-4 col-sm-4 px-1 mb-2">
-                      <a
-                        href="mailto:muhammadruffianazzahri@gmail.com"
-                        target="_blank"
-                        class="btn btn-dark btn-lg w-100"
-                      >
-                        <font-awesome-icon :icon="['fas', 'envelope']" size="2x" />
-                      </a>
-                    </div>
-                    <div class="col-4 col-sm-4 px-1 mb-2">
-                      <a
-                        href="https://wa.link/bzz35f"
-                        target="_blank"
-                        class="btn btn-dark btn-lg w-100"
-                      >
-                        <font-awesome-icon :icon="['fas', 'phone']" size="2x" />
+                    <div
+                      v-for="(contact, index) in contacts"
+                      :key="index"
+                      class="col-4 col-sm-4 px-1 mb-2"
+                    >
+                      <a :href="contact.link" target="_blank" class="btn btn-dark btn-lg w-100">
+                        <font-awesome-icon :icon="contact.icon" size="2x" />
                       </a>
                     </div>
                   </div>
@@ -104,6 +86,7 @@
       </svg>
     </div>
   </section>
+
   <div
     class="modal fade"
     id="cvModal"
@@ -138,6 +121,20 @@ export default {
   data() {
     return {
       showBackToTop: false,
+      contacts: [
+        {
+          link: "https://linkedin.com/in/ruffianazzahri",
+          icon: ["fab", "linkedin"],
+        },
+        {
+          link: "mailto:muhammadruffianazzahri@gmail.com",
+          icon: ["fas", "envelope"],
+        },
+        {
+          link: "https://wa.link/bzz35f",
+          icon: ["fas", "phone"],
+        },
+      ],
     };
   },
   mounted() {

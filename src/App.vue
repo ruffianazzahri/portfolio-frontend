@@ -20,6 +20,8 @@ import Skills from "./components/Skills.vue";
 import FooterSection from "./components/Footer.vue";
 import Achievements from "./components/Achievements.vue";
 import Certificates from "./components/Certificates.vue";
+import ExperienceTable from "./components/ExperienceTable.vue";
+import ExperienceModal from "./components/ExperienceModal.vue";
 
 export default {
   name: "Home",
@@ -28,6 +30,8 @@ export default {
     HomeSection,
     Projects,
     WorkExperience,
+    ExperienceTable,
+    ExperienceModal,
     Skills,
     Achievements,
     Certificates,

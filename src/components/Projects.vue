@@ -224,7 +224,7 @@ export default {
             "A Web-Based Information System for a Government Office in Batam, developed for requesting travel orders, submitting payments, submitting dispositions, and more.",
           type: "External Project",
           category: "Government Web Development, Laravel, PHP, MySQL",
-          date: "September 2024 - Present (Ongoing)",
+          date: "September 2024 - Present",
           isConfidential: true,
           link: null,
         },
@@ -309,7 +309,7 @@ export default {
           description:
             "An Android application developed by SFR Developers allows users to report facility issues online directly to the Department of Education Office in Tanjungpinang City.",
           type: "PBL Project, External Project",
-          category: "Corporate Apps Development, Flutter, Dart, MySQL",
+          category: "Government Apps Development, Flutter, Dart, MySQL",
           date: "August 2022 - December 2022",
           isConfidential: false,
           link: "https://if.polibatam.ac.id/pamerin/detail.php?title=si-lah&id=NDMxMjAwMTA2Ng==&ta=Mw==",

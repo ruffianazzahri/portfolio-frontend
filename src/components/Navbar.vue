@@ -30,12 +30,22 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#home" :class="{ active: activeSection === 'home' }">
+            <a
+              class="nav-link"
+              href="#home"
+              :class="{ active: activeSection === 'home' }"
+              @click="setActiveSection('home')"
+            >
               <font-awesome-icon :icon="['fas', 'home']" /> Home
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects" :class="{ active: activeSection === 'projects' }">
+            <a
+              class="nav-link"
+              href="#projects"
+              :class="{ active: activeSection === 'projects' }"
+              @click="setActiveSection('projects')"
+            >
               <font-awesome-icon :icon="['fas', 'diagram-project']" /> Projects
             </a>
           </li>
@@ -44,12 +54,18 @@
               class="nav-link"
               href="#work-experience"
               :class="{ active: activeSection === 'work-experience' }"
+              @click="setActiveSection('work-experience')"
             >
               <font-awesome-icon :icon="['fas', 'briefcase']" /> Work Experience
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills" :class="{ active: activeSection === 'skills' }">
+            <a
+              class="nav-link"
+              href="#skills"
+              :class="{ active: activeSection === 'skills' }"
+              @click="setActiveSection('skills')"
+            >
               <font-awesome-icon :icon="['fas', 'lightbulb']" /> Skills
             </a>
           </li>
@@ -58,6 +74,7 @@
               class="nav-link"
               href="#achievements"
               :class="{ active: activeSection === 'achievements' }"
+              @click="setActiveSection('achievements')"
             >
               <font-awesome-icon :icon="['fas', 'trophy']" /> Achievements
             </a>
@@ -67,6 +84,7 @@
               class="nav-link"
               href="#certificates"
               :class="{ active: activeSection === 'certificates' }"
+              @click="setActiveSection('certificates')"
             >
               <font-awesome-icon :icon="['fas', 'certificate']" /> Certificates
             </a>
@@ -80,5 +98,52 @@
 <script>
 export default {
   name: "Navbar",
+  data() {
+    return {
+      activeSection: "home", // Default active section
+    };
+  },
+  methods: {
+    setActiveSection(section) {
+      this.activeSection = section;
+    },
+  },
+  mounted() {
+    // Detect scroll position to dynamically highlight active section
+    window.addEventListener("scroll", this.highlightSectionOnScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.highlightSectionOnScroll);
+  },
+  methods: {
+    setActiveSection(section) {
+      this.activeSection = section;
+    },
+    highlightSectionOnScroll() {
+      const sections = [
+        "home",
+        "projects",
+        "work-experience",
+        "skills",
+        "achievements",
+        "certificates",
+      ];
+      let currentSection = this.activeSection;
+      sections.forEach((section) => {
+        const element = document.querySelector(`#${section}`);
+        if (element && window.scrollY >= element.offsetTop - 100) {
+          currentSection = section;
+        }
+      });
+      this.activeSection = currentSection;
+    },
+  },
 };
 </script>
+
+<style scoped>
+/* Optional: Customize active link */
+.navbar-nav .nav-link.active {
+  color: #00ff32;
+}
+</style>

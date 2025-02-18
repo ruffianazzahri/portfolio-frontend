@@ -10,48 +10,14 @@
     </div>
     <div class="container">
       <div class="row mb-3">
-        <div class="col mb-3">
+        <div v-for="(achievement, index) in achievements" :key="index" class="col mb-3">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">
-                <a
-                  href="https://drive.google.com/file/d/1QI59wXhJzTKhIfkgl2j8lD2Rc7RbMaan/view?usp=sharing"
-                  target="_blank"
-                  >2022 Participant of Web Development Competition</a
-                >
+                <a :href="achievement.link" target="_blank">{{ achievement.title }}</a>
               </h5>
-              <p class="card-text fst-italic">Sevent, HMSE, Institut Teknologi Telkom Purwokerto</p>
-              <p class="card-text fst-italic text-secondary">October 25, 2022</p>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">
-                <a
-                  href="https://drive.google.com/file/d/1r2XwveSycqDv5NKdcxhRl16pRfP4t-Fu/view?usp=sharing"
-                  target="_blank"
-                  >2022 Finalist of National Game Development Competition</a
-                >
-              </h5>
-              <p class="card-text fst-italic">KMIPN IV, Politeknik Negeri Batam</p>
-              <p class="card-text fst-italic text-secondary" target="_blank">August 03, 2022</p>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1S_52GCeU7gOwnbi5qkucJkZzA1Z7z9t7/view?usp=sharing"
-                  >Participant of Photography Contest</a
-                >
-              </h5>
-              <p class="card-text fst-italic">Politeknik Negeri Batam</p>
-              <p class="card-text fst-italic text-secondary">November 16, 2020</p>
+              <p class="card-text fst-italic">{{ achievement.organization }}</p>
+              <p class="card-text fst-italic text-secondary">{{ achievement.date }}</p>
             </div>
           </div>
         </div>
@@ -59,3 +25,32 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      achievements: [
+        {
+          title: "2022 Participant of Web Development Competition",
+          link: "https://drive.google.com/file/d/1QI59wXhJzTKhIfkgl2j8lD2Rc7RbMaan/view?usp=sharing",
+          organization: "Sevent, HMSE, Institut Teknologi Telkom Purwokerto",
+          date: "October 25, 2022",
+        },
+        {
+          title: "2022 Finalist of National Game Development Competition",
+          link: "https://drive.google.com/file/d/1r2XwveSycqDv5NKdcxhRl16pRfP4t-Fu/view?usp=sharing",
+          organization: "KMIPN IV, Politeknik Negeri Batam",
+          date: "August 03, 2022",
+        },
+        {
+          title: "Participant of Photography Contest",
+          link: "https://drive.google.com/file/d/1S_52GCeU7gOwnbi5qkucJkZzA1Z7z9t7/view?usp=sharing",
+          organization: "Politeknik Negeri Batam",
+          date: "November 16, 2020",
+        },
+      ],
+    };
+  },
+};
+</script>
