@@ -159,7 +159,7 @@ export default {
       </div>
     </div>
 
-    <div class="text-center p-2">
+    <div class="p-2">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 mb-4" v-for="project in projects" :key="project.title">
@@ -181,14 +181,14 @@ export default {
                 </div>
               </div>
               <div class="card-body">
-                <h5 class="card-title">
+                <h5 class="card-title text-center">
                   {{ project.title }}
                   <span class="fw-bold" v-if="project.isConfidential">(CONFIDENTIAL)</span>
                 </h5>
                 <p class="card-text">{{ project.description }}</p>
-                <p class="card-text fw-bold">Project Type: {{ project.type }}</p>
-                <p class="card-text fw-bold">Category: {{ project.category }}</p>
-                <p class="card-text fst-italic">{{ project.date }}</p>
+                <p class="card-text fw-bold text-center">Project Type: {{ project.type }}</p>
+                <p class="card-text fw-bold text-center">Category: {{ project.category }}</p>
+                <p class="card-text fst-italic text-center">{{ project.date }}</p>
               </div>
             </div>
           </div>
