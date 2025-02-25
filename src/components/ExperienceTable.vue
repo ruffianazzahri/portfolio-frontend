@@ -8,6 +8,13 @@
       >
         <div class="card experience-card">
           <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center justify-content-center p-2">
+              <img
+                :src="experience.company.logo"
+                class="fixed-size-img rounded"
+                :alt="experience.company.name"
+              />
+            </div>
             <div class="col-md-8 p-4">
               <h5 class="card-title">{{ experience.position }}</h5>
               <p class="card-text"><strong>Duration:</strong> {{ experience.year }}</p>
@@ -33,14 +40,6 @@
                 {{ experience.modal.title }}
               </button>
               <ExperienceModal :modal="experience.modal" />
-            </div>
-
-            <div class="col-md-4 d-flex align-items-center justify-content-center p-2">
-              <img
-                :src="experience.company.logo"
-                class="fixed-size-img rounded"
-                :alt="experience.company.name"
-              />
             </div>
           </div>
         </div>

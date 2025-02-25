@@ -44,7 +44,7 @@ export default {
           modal: {
             id: "schModal",
             title: "Schneider Internship Letter of Acknowledgement",
-            content: "pdf/sch.pdf",
+            content: "/pdf/sch.pdf",
           },
         },
         {
