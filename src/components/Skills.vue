@@ -28,13 +28,12 @@ const skills = ref([
     title: "Informatics",
     icon: ["fas", "laptop-code"],
     description:
-      "Web Development, App Development, Game Development, Unity Development, Web Design, UI/UX Design, Multimedia",
+      "Web Development, App Development, Unity Development, Web Design, UI/UX Design, Multimedia",
   },
   {
     title: "Frameworks",
     icon: ["fas", "layer-group"],
-    description:
-      "ASP .NET MVC, ASP .NET Core, ASP .NET Core Blazor, Vue.JS, Laravel, Flutter, Bootstrap",
+    description: "ASP .NET MVC, ASP .NET Core, Vue.JS, Laravel, Flutter, Bootstrap",
   },
   {
     title: "Programming Languages",

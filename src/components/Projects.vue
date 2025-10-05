@@ -225,14 +225,42 @@ export default {
     return {
       projects: [
         {
+          title: "Capital Auto Batam Company Profile",
+          image: "/img/capital1.png",
+          images: [
+            { url: "/img/capital1.png", caption: "Screenshot 1" },
+            { url: "/img/capital2.png", caption: "Screenshot 2" },
+            { url: "/img/capital3.png", caption: "Screenshot 3" },
+          ],
+          description:
+            "A company profile website project for PT. Cuan Auto Sukses (Capital Auto Batam), a pre- owned car dealership based in Batam. The website was developed using the ASP.NET MVC 9 framework with the goal of introducing the company to potential investors and buyers, aiming to increase engagement and enhance the company’s visibility and brand reputation.",
+          type: "External Project",
+          category: "Corporate Web Development, ASP .NET MVC",
+          date: "August 2025 - Present",
+          isConfidential: false,
+          link: null,
+        },
+        {
+          title: "Point Of Sales (POS) Web-apps with Membership Feature",
+          image: "/img/pos.png",
+          images: [{ url: "/img/pos.png", caption: "POS Screenshot" }],
+          description:
+            "An exclusive POS application built using Laravel 10, Blade and MySQL. This application features sales transaction recording, receipt printing, customer data management, inventory tracking, product management, and daily, weekly, and monthly sales reporting. The innovative feature for this project is Membership Card feature, exclusively for VIP Members who owns a member card.",
+          type: "External Project",
+          category: "Corporate Web Development, Laravel, PHP, MySQL",
+          date: "June 2025 - August 2025",
+          isConfidential: false,
+          link: "https://github.com/ruffianazzahri/rms_pos",
+        },
+        {
           title: "Government Website",
-          image: "/img/governmentcomingsoon.png",
-          images: [{ url: "/img/governmentcomingsoon.png", caption: "Coming soon" }],
+          image: "/img/government.jpeg",
+          images: [{ url: "/img/government.jpeg", caption: "Government Website" }],
           description:
             "A Web-Based Information System for a Government Office in Batam, developed for requesting travel orders, submitting payments, submitting dispositions, and more.",
           type: "External Project",
           category: "Government Web Development, Laravel, PHP, MySQL",
-          date: "September 2024 - Present",
+          date: "September 2024 - May 2025",
           isConfidential: true,
           link: null,
         },

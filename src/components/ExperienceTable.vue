@@ -1,49 +1,58 @@
 <template>
   <div class="container py-4">
-    <div class="experience-list">
-      <div
-        v-for="experience in experiences"
-        :key="experience.id"
-        class="experience-card-wrapper mb-4"
-      >
-        <div class="card experience-card">
+    <div class="row g-4">
+      <div v-for="experience in experiences" :key="experience.id" class="col-12 col-md-6">
+        <div class="card h-100 experience-card">
           <div class="row g-0">
-            <div class="col-md-4 d-flex align-items-center justify-content-center p-2">
+            <div class="col-12 d-flex align-items-center justify-content-center p-3">
               <img
                 :src="experience.company.logo"
                 class="fixed-size-img rounded"
                 :alt="experience.company.name"
               />
             </div>
-            <div class="col-md-8 p-4">
+            <div class="col-12 p-4">
               <h5 class="card-title">{{ experience.position }}</h5>
               <p class="card-text"><strong>Duration:</strong> {{ experience.year }}</p>
               <p class="card-text"><strong>Company:</strong> {{ experience.company.name }}</p>
+
               <p class="card-text"><strong>Responsibilities:</strong></p>
               <ul>
-                <li v-for="(responsibility, index) in experience.responsibilities" :key="index">
+                <li
+                  v-for="(responsibility, index) in experience.responsibilities"
+                  :key="'resp-' + index"
+                >
                   {{ responsibility }}
                 </li>
               </ul>
+
               <p class="card-text"><strong>Contributions:</strong></p>
               <ul>
-                <li v-for="(contribution, index) in experience.contributions" :key="index">
+                <li
+                  v-for="(contribution, index) in experience.contributions"
+                  :key="'contrib-' + index"
+                >
                   {{ contribution }}
                 </li>
               </ul>
+
               <button
                 type="button"
                 class="btn btn-dark mt-2"
                 data-bs-toggle="modal"
-                :data-bs-target="'#' + experience.modal.id"
+                :data-bs-target="'#modal-' + experience.id"
               >
                 {{ experience.modal.title }}
               </button>
-              <ExperienceModal :modal="experience.modal" />
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- ✅ Render semua modal di luar grid -->
+    <div v-for="experience in experiences" :key="'modal-' + experience.id">
+      <ExperienceModal :modal="{ ...experience.modal, id: 'modal-' + experience.id }" />
     </div>
   </div>
 </template>
@@ -66,19 +75,17 @@ export default {
 </script>
 
 <style scoped>
-.experience-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.experience-card-wrapper {
-  width: 100%;
-}
-
 .fixed-size-img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
+}
+
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 </style>
