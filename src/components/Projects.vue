@@ -249,8 +249,8 @@ export default {
           type: "External Project",
           category: "Corporate Web Development, Laravel, PHP, MySQL",
           date: "June 2025 - August 2025",
-          isConfidential: false,
-          link: "https://github.com/ruffianazzahri/rms_pos",
+          isConfidential: true,
+          link: null,
         },
         {
           title: "Government Website",
