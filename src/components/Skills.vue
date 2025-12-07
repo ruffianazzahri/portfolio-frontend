@@ -33,7 +33,7 @@ const skills = ref([
   {
     title: "Frameworks",
     icon: ["fas", "layer-group"],
-    description: "ASP .NET MVC, ASP .NET Core, Vue.JS, Laravel, Flutter, Bootstrap",
+    description: "ASP .NET MVC, ASP .NET Core, Blazor, Vue.JS, Laravel, Flutter, Bootstrap",
   },
   {
     title: "Programming Languages",

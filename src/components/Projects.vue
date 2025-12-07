@@ -225,6 +225,22 @@ export default {
     return {
       projects: [
         {
+          title: "RFF Employee Management",
+          image: "/img/rff1.png",
+          images: [
+            { url: "/img/rff1.png", caption: "Screenshot 1" },
+            { url: "/img/rff2.png", caption: "Screenshot 2" },
+            { url: "/img/rff3.png", caption: "Screenshot 3" },
+          ],
+          description:
+            "RFF Employee Management is a self-directed learning project application designed to manage employees data. Built using Blazor WebAssembly and .NET 10.",
+          type: "Initiative Project",
+          category: "Corporate Web Development, ASP .NET MVC",
+          date: "August 2025 - Present",
+          isConfidential: false,
+          link: null,
+        },
+        {
           title: "Capital Auto Batam Company Profile",
           image: "/img/capital1.png",
           images: [
